@@ -1,0 +1,298 @@
+@import  './base.css';
+/* start header */
+.header{
+    padding-block:10px;
+    position: sticky;
+    top:0;
+    z-index: 10;
+    background-color: white;
+    box-shadow: 0 0 4px 1px black;
+}
+.header .container {
+    display:flex ;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .container .start-header{
+    display: flex;
+    gap:50px;
+    align-items: center;
+}
+.header .container .start-header .nav ul{
+    display: flex;
+    gap:26px;
+}
+.header .container .start-header .nav ul li{
+    padding: 5px;
+    transition: all 1.5s;
+}
+.header .container .start-header .nav ul li:hover{
+    background: #f1f1f3;
+    padding: 5px;
+    border-radius: 8px;
+    transition: all 1.5s;
+}
+.header .container .start-header .nav ul a {
+   color: #262626;
+}
+.header .container .end-header .auth{
+    display: flex;
+    gap:40px;
+    width: 200px;
+height: 40px;
+align-items: center;
+justify-content: center;
+font-weight: 400;
+color: #262626;
+}
+.header .container .end-header .auth a:nth-child(1){
+    color:#262626;
+
+}
+.header .container .end-header .auth a:nth-child(2){
+    background: #ff9400;
+ color:white;
+border-radius: 8px;
+padding:10px 27px;
+align-self: center;
+}
+.header .bars{
+    display: none;
+}
+@media (max-width:911px){
+    .header .container .start-header .nav{
+        display: none;
+    }
+    .header .bars{
+        display: block;
+    }
+}
+/* end header */
+/* start Benefits */
+.Benefits .container{
+    padding-block: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap:50px;
+   
+}
+.Benefits .row:nth-child(1){
+flex-direction: column;
+gap:10px;
+}
+.Benefits .row:nth-child(1) h1{
+    font-weight: 600;
+font-size: 48px;
+}
+.Benefits .row:nth-child(2)
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap:30px;
+}
+.Benefits .row:nth-child(2) p{
+    font-weight: 400;
+font-size: 15px;
+color: #585859;
+flex-grow: 4;
+width:calc((100% - 30px) / 2) ;
+
+}
+.Benefits .row:nth-child(2) button{
+
+padding:7px 4px;
+background: #fcfcfc;
+border: 1px solid #f1f1f3;
+border-radius: 8px;
+font-size: 12px;
+}
+
+.Benefits .Benefits-card{
+    display: flex;
+flex-wrap: wrap;
+    gap:20px;
+    background-color: #ffffffa8;
+
+}
+.Benefits .Benefits-card .Benefits-cards{
+width:calc((100% - 40px) / 3);
+padding: 50px 50px;
+border-radius: 12px;
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+background-color: rgba(255, 255, 255, 0.918);
+gap:20px;
+}
+.Benefits .Benefits-card .Benefits-cards h2{
+    text-align: right;
+    font-weight: 700;
+font-size: 50px;
+color: #262626;
+}
+.Benefits .Benefits-card .Benefits-cards h3{
+    font-weight: 600;
+font-size: 15px;
+line-height: 1.5;
+letter-spacing: -0.01em;
+text-align: left;
+color: #333333;
+}
+.Benefits .Benefits-card .Benefits-cards p{
+ font-weight: 400;
+font-size: 12px;
+line-height: 1.5;
+text-align: left;
+color: #4c4c4c;   
+}
+.Benefits .Benefits-card .Benefits-cards .row{
+    align-self: flex-end;
+}
+.Benefits .Benefits-card .Benefits-cards i{
+    color:yellow;
+    transform:rotate(-45deg)
+}
+@media(max-width:1024px){
+    .Benefits .Benefits-card .Benefits-cards{
+        width:calc((100% - 40px) / 2);}
+}
+@media(max-width:768px){
+    .Benefits .Benefits-card .Benefits-cards{
+        width:calc((100% - 40px) / 1);}
+
+        .Benefits .row:nth-child(2){
+            flex-direction: column;
+        }
+        .Benefits .row:nth-child(2) p{
+            width: 100%;
+        }
+        .Benefits .row:nth-child(2) button{
+            align-self: flex-start;
+        }
+}
+/* end Benefits */
+/* start Our Pricing */
+.Our-Pricing h1{
+font-weight: 600;
+font-size: 38px;
+line-height: 1.5;
+text-align: left;
+color: #262626;
+padding:6px 0;
+}
+.Our-Pricing .container .row {
+    gap:40px
+}
+.Our-Pricing .container .row p{
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 1.5;
+    text-align: left;
+    color: #585859;
+  width:calc((100% - 40px) / 2);
+  flex-grow:3;
+}
+.Our-Pricing .auth{
+    display: flex;
+    gap:40px;
+height: 40px;
+align-items: center;
+justify-content: flex-end;
+font-weight: 400;
+width:calc((100% - 40px) / 2);
+flex-grow:1;
+
+
+}
+.Our-Pricing .auth a:nth-child(1){
+    color:#262626;
+
+}
+.Our-Pricing .auth a:nth-child(2){
+    background: #ff9400;
+ color:white;
+border-radius: 8px;
+padding:10px 27px;
+align-self: center;
+}
+.Our-Pricing .Our-Pricing-card{
+    padding: 70px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.Our-Pricing .Our-Pricing-card .Our-Pricing-cards{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap:30px;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+.Our-Pricing .Our-Pricing-card .Our-Pricing-cards button{
+    width:60%;
+    height: 30px; 
+background: #fff8ef;
+border: 1px solid #ffeacc;
+border-radius: 4px;
+}
+.Our-Pricing .Our-Pricing-card .Our-Pricing-cards h2{
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 0.73;
+
+    color: #262626;     
+}
+.Our-Pricing .Our-Pricing-card .Our-Pricing-cards h2 span{
+    font-weight: 500;
+font-size: 12px;
+line-height: 0.73;
+color: #4c4c4c;
+}
+.Our-Pricing .Our-Pricing-card .Our-Pricing-cards .Our-Pricing-card-info{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap:30px;
+}
+.Our-Pricing .Our-Pricing-card .Our-Pricing-cards .Our-Pricing-card-info h3{
+    text-align: center;
+font-weight: 500;
+font-size: 18px;
+line-height: 1.5;
+color: #262626;
+}
+.Our-Pricing .Our-Pricing-card .Our-Pricing-cards .Our-Pricing-card-info ul li{
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+    padding:10px;
+    text-align: center;
+
+}
+.Our-Pricing .Our-Pricing-card .Our-Pricing-cards .Our-Pricing-card-info button{
+    width:100%;
+    overflow: hidden;
+    background-color: #ff9400;
+    border-radius: 0px 0px 8px 8px;
+    color:white;
+}
+@media (max-width:850px){
+    .Our-Pricing .Our-Pricing-card .Our-Pricing-cards{
+        flex: none;
+    }
+    .Our-Pricing .Our-Pricing-card{
+        flex-direction: column;
+        gap:30px;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
+
+
+
+
+/* end Our Pricing */
